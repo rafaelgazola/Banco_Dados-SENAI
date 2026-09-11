@@ -24,7 +24,23 @@ INSERT INTO alunos(
 )
 
 -- alter --
+SELECT * FROM alunos;
 
+--modific--
+
+ALTER TABLE alunos ALTER COLUMN nome TYPE VARCHAR(255);
+
+-- acrescentar uma coluno --
+
+UPDATE alunos
+SET email = 'rafaelgomescosta17@gmail.com'
+WHERE id = 1;
+
+UPDATE alunos
+SET turma = 'I1D46a', date = '2001-09-11'
+WHERE id = 10;
+
+DELETE FROM alunos;
 
 
 SELECT * FROM alunos;
